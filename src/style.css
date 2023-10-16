@@ -1,0 +1,42 @@
+*{
+
+    margin:0px;
+    padding:0px;
+    --bg-color:#ffffff;
+
+}
+
+body{
+
+    overflow:hidden;
+
+}
+
+.navbar{
+
+    background-color:var(--bg-color);
+
+}
+
+#NavBar{
+
+    gap:1.5rem;
+    justify-content: space-around;
+
+}
+
+.navbar-nav{
+
+    gap:1rem;
+    font-size:1.1rem;
+    font-weight: 500;
+
+}
+
+#particles-js{
+
+    width:100vw;
+    height:100vh;
+    background-color: var(--bg-color);
+
+}
