@@ -23,6 +23,31 @@
 
 }
 
+#credentials_modal{
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#credentials_signup_title, #credentials_login_title{
+
+    font-size:1.5rem;
+    font-weight:bold;
+
+}
+
+#credentials_signup_google_btn,#credentials_signup_email_btn,#credentials_login_google_btn, #credentials_login_email_btn{
+
+    font-size:1.1rem;
+    font-weight:1.3rem;
+    padding:1rem;
+    border-radius:2rem;
+
+}
+
 #hero_container{
 
     display:flex;

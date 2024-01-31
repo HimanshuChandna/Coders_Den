@@ -29,7 +29,32 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span><img src="/media/Coder's Den Logo.ico" alt="profile_image" id="profile_image"></span>Log In</a>
+                    <a class="nav-link" href="#"><span><img src="/media/Coder's Den Logo.ico" alt="profile_image" id="profile_image"></span><!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Login In
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body" id="credentials_modal">
+                                <p id="credentials_signup_title">Sign Up</p>
+                                <button id="credentials_signup_google_btn">Google Signin</button>
+                                <p>Or</p>
+                                <button id="credentials_signup_email_btn">Sign up with email
+                                </button>
+                                <p id="credentials_login_title">Login</p>
+                                <button id="credentials_login_google_btn">Login with Google</button>
+                                <p>Or</p>
+                                <button id="credentials_login_email_btn">Login with Email</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a>
                   </li>
                 </ul>
               </div>
