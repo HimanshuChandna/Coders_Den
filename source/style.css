@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+
+    margin:0px;
+    padding:0px;
+    --bg-color:#ffffff;
+    font-family:poppins;
+    font-size:1rem;
+    font-weight:600;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+.navbar{
+
+    background-color:var(--bg-color);
+
+}
+
+#NavBar{
+
+    gap:1.5rem;
+    justify-content: space-around;
+
+}
+
+.navbar-nav{
+
+    gap:1rem;
+    font-size:1.1rem;
+    font-weight: 500;
+
+}
+
+#particles-js{
+
+    width:100vw;
+    height:100vh;
+    background-color: var(--bg-color);
+
+}
+
+/* About Page */
+
+/* Heading Section */
+
+#about_heading{
+
+    font-family:poppins;
+    text-align: center;
+    margin:4rem 0px 0px 0px;
+    font-weight:600;
+    text-decoration: underline;
+
+}
+
+.about_container{
+
+    border:2px solid black;
+    border-radius:10px;
+    /* padding:4rem; */
+    text-align: center;
+    /* margin:4rem 8rem; */
+
+}
+
+.connect_with_devs{
+
+    /* border:2px solid black; */
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.devs{
+
+    /* border:2px solid black; */
+    padding:0.5rem;
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    flex-wrap: wrap;
+
+}
+
+.dev{
+
+    border:2px solid black;
+    border-radius:10px;
+    padding:1rem;
+
+}
+
+.social_media{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+.social_media a{
+
+    color:black;
+    border:2px solid black;
+    padding:.5rem 1rem;
+    /* margin:2rem 0rem; */
+    text-decoration: none;
+
+}
+
+#footer_info{
+
+    text-align: center;
+    font-weight: 300;
+
+}
+
+/* Contact Us */
+
+#contact_partition{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+#contact_partition p{
+
+    font-size:2rem;
+    font-weight: 300;
+
+}
+
+.line{
+
+    border:1px solid black;
+    height:0;
+    width:40%;
+
+}
+
+/* front page */
+
+.front_banner{
+
+    height:100vh;
+
+}
