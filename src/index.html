@@ -7,6 +7,7 @@
     <link href="./style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <script src="./main.js" defer type="module"></script>
+    <script src="./auth_state.js"></script>
     <title>Coder's Den</title>
 </head>
 <body>
@@ -46,12 +47,12 @@
                               <div class="modal-body" id="credentials_modal">
                                 <p id="credentials_signup_title">Sign Up</p>
                                 <button id="credentials_signup_google_btn">Google Signin</button>
-                                <p>Or</p>
-                                <button id="credentials_signup_email_btn">Sign up with email
+                                <p id="or_divider_1">Or</p>
+                                <button id="credentials_signup_email_btn" onclick="signInWindow()">Sign up with email
                                 </button>
                                 <p id="credentials_login_title">Login</p>
                                 <button id="credentials_login_google_btn">Login with Google</button>
-                                <p>Or</p>
+                                <p id="or_divider_2">Or</p>
                                 <button id="credentials_login_email_btn">Login with Email</button>
                               </div>
                             </div>
