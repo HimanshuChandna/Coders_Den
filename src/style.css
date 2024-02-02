@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 *{
 
     margin:0px;
     padding:0px;
+    font-family:roboto;
 
 }
 
@@ -23,16 +27,16 @@
 
 }
 
-#credentials_modal{
+/* #credentials_modal{
 
     display:flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
 
-}
+} */
 
-#credentials_signup_title, #credentials_login_title{
+/* #credentials_signup_title, #credentials_login_title{
 
     font-size:1.5rem;
     font-weight:bold;
@@ -46,7 +50,102 @@
     padding:1rem;
     border-radius:2rem;
 
+} */
+
+.signup-form-container{
+
+    /* border:2px solid black; */
+    display:flex;
+    flex-direction:column;
+    margin:0rem 5rem;
+    gap:20px;
+    align-items: center;
+    padding:2rem;
+
 }
+
+#credentials_form_sigin{
+
+    /* border:2px solid black; */
+    display:flex;
+    flex-direction:column;
+    /* margin:0rem 5rem; */
+    gap:20px;
+    align-items: center;
+
+}
+
+#signup_form_title{
+
+    font-size:2.5rem;
+    font-weight: 600;
+
+}
+
+.signup{
+
+    padding:.3rem;
+
+}
+
+#signup_btn{
+
+    padding-inline: 2rem;
+
+}
+
+/* .login_link{
+
+    color:#24a0ed;
+
+} */
+
+.signup_google{
+
+    padding:.5rem;
+    width:15rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1rem;
+    background-color: white;
+    border:2px solid lightgrey;
+    border-radius:5px;
+    /* margin:2rem; */
+
+}
+
+.google_logo{
+
+    width:1rem;
+    margin-inline: .2rem;
+
+}
+
+.line{
+
+    border: 1px solid black;
+
+}
+
+.login-form-container{
+
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    margin:0rem 5rem;
+    gap:20px;
+    align-items: center;
+
+}
+
+/* #signup_password{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+} */
 
 #hero_container{
 

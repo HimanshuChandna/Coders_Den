@@ -24,7 +24,7 @@
   const provider = new GoogleAuthProvider();
   const analytics = getAnalytics(app);
 
-  const google_login = document.getElementById("credentials_signup_google_btn");
+  const google_login = document.getElementById("google_login_btn");
   google_login.addEventListener('click', function() {
     // alert(200);
 
