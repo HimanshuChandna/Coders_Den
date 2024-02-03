@@ -43,7 +43,10 @@
             console.log(userEmail);
             console.log(userProfilePicture);
             document.getElementById("userProfilePicture").src = userProfilePicture;
-            // window.location.href = "./index.html";
+            let username ="<h2>Welcome, "+ userName + " !</h2>";
+            let hero_subtitle = document.getElementById("hero_subtitle");
+            hero_subtitle.insertAdjacentHTML("afterend", username);
+            window.location.href = "#";
         }).catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
