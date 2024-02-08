@@ -1,0 +1,27 @@
+body{
+    background-image: url(images/77090987_fb-image_normal_none.jpg);
+    background-size: contain;
+    padding: 2vh 2vh 2vh 2vh;
+    
+}
+
+.submitnotes {
+    box-sizing: border-box;
+    box-shadow: #03a9f4 0px 0px 19px 7px;
+    backdrop-filter: blur(5px);
+    border-color: rgb(0, 0, 0);
+    border-width: 1.7vh;
+    border-style: double;
+    border-top-left-radius:2vh ;
+    border-top-right-radius: 2vh;
+    border-bottom-left-radius:2vh ;
+    border-bottom-right-radius:2vh ;
+
+
+}
+
+.contributenotes {
+    padding: 2vh 2vh 2vh 2vh;
+    display:inline-block;
+    
+}

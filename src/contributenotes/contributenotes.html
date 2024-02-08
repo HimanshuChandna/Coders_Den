@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contribute notes</title>
+    <link rel="stylesheet" href="contributenotes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $('#school').click(function(){$("#class").toggle(this.click);});
+        $(document).ready(function () {
+            $("#classno").hide();
+            $("#coursename").hide();
+            $("#semester").hide();
+            $(".contributenotes input").change(function () {
+                var val = $("input[name=study]:checked", ".contributenotes").val();
+                if (val == "school") {
+                    $("#classno").show();
+                    $("#coursename").hide();
+                    $("#semester").hide();
+                }
+                else {
+                    $("#classno").hide();
+                    $("#coursename").show();
+                    $("#semester").show();
+                }
+            });
+        }); 
+    </script>
+</head>
+
+<body>
+    <div class="contributenotes">
+    <div class="submitnotes">
+        <form action="" method="post" class="contributenotes">
+            <fieldset>
+                <legend>CONTRIBUTE NOTES</legend>
+                <input type="radio" name="study" value="school">
+                <label>SCHOOL</label>
+                <input type="radio" name="study" value="college">
+                <label>COLLEGE</label>
+                <div id="classno">
+                    <select>
+                        <option value="5" selected hidden>choose class</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div id="coursename">
+                    <input list="course" placeholder="COURSE" autofocus>
+                    <datalist id="course">
+                        <option value="BCA">
+                        <option value="MCA">
+                        <option value="BTECH">
+                        <option value="MTECH">
+                        <option value="B.J.M.C">
+                        <option value="BCOM">
+                        <option value="BBA">
+                        <option value="BBA LL.B.">
+                        <option value="LL.M.">
+                        <option value="M.A.">
+                    </datalist>
+                </div>
+                <div id="semester">
+                    <select size="0">
+                        <option value="0" selected hidden>choose semester</option>
+                        <option value="1">semester 1</option>
+                        <option value="2">semester 2 </option>
+                        <option value="3">semester 3</option>
+                        <option value="4">semester 4</option>
+                        <option value="5">semester 5</option>
+                        <option value="6">semester 6</option>
+                        <option value="7">semester 7</option>
+                        <option value="8">semester 8</option>
+                        <option value="9">semester 9</option>
+                        <option value="10">semester 10</option>
+                        <option value="11">semester 11</option>
+                        <option value="12">semester 12</option>
+                    </select>
+                </div>
+                <label for="file">drop the notes here</label>
+                <input type="file" id="file">
+                <label for="description">description</label>
+                <textarea rows=10 coloums=20 id="description">Enter the discription here</textarea>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
