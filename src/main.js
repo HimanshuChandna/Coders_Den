@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
-  import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
+  import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -24,6 +24,28 @@
   const provider = new GoogleAuthProvider();
   const analytics = getAnalytics(app);
 
+  const password = document.getElementById("siginInCreatePassword"); 
+  const email = document.getElementById("siginInEmail");
+
+  const primary_signin = document.getElementById("signup_btn");
+  primary_signin.addEventListener("click", function() {;
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredentials) => {
+
+      const user = userCredentials.user;
+      window.location.href = "#";
+
+    })
+
+    .catch((error) => {
+
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+    });
+  
+  });
+
   const google_login = document.getElementById("google_login_btn");
   google_login.addEventListener('click', function() {
     // alert(200);
@@ -32,6 +54,7 @@
     signInWithPopup(auth, provider)
         .then((result) => {
             const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
             const user = result.user;
             console.log(user);
             
@@ -43,10 +66,15 @@
             console.log(userEmail);
             console.log(userProfilePicture);
             document.getElementById("userProfilePicture").src = userProfilePicture;
-            // window.location.href = "./index.html";
+            let username ="<h2>Welcome, "+ userName + " !</h2>";
+            let hero_subtitle = document.getElementById("hero_subtitle");
+            hero_subtitle.insertAdjacentHTML("afterend", username);
+            window.location.href = "#";
         }).catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            const email = error.customData.email;
+            const credential = GoogleAuthProvider.credentialFormError(error);
         });
 
   });

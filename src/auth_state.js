@@ -46,3 +46,53 @@ signInWindow = () => {
     }
 
 };
+
+login_function = () => {
+
+    // console.log("Login !!!");
+    let FullName = document.getElementById("siginInName");
+    let Email = document.getElementById("siginInEmail");
+    let RepeatPassword = document.getElementById("siginInReenterPassword");
+    let Sigin_btn = document.getElementById("signup_btn");
+    let Login_context = document.getElementById("Login_context");
+    let Login_window_btn = document.getElementById("login_btn");
+    let Form_title = document.getElementById("signup_form_title");
+    let Credentials_form = document.getElementById("credentials_form_sigin");
+    FullName.remove();
+    RepeatPassword.remove();
+    Login_context.remove();
+    Login_window_btn.remove();
+    Form_title.remove();
+
+    Sigin_btn.setAttribute("value", "Login")
+    let Login_title = "<p id='login_form_title'>Login</p>";
+    Email.insertAdjacentHTML("beforebegin",Login_title);
+    let Signin_Context = "<p id='Signin_context'>Don't have an account?<span class='sigin_link link-primary' id='signin_btn' onclick='sigin_function()'> Sigin</span></p>"
+    Credentials_form.insertAdjacentHTML("afterend",Signin_Context);
+
+};
+
+sigin_function = () => {
+
+    let Login_title = document.getElementById("login_form_title");
+    let Email = document.getElementById("siginInEmail");
+    let Password = document.getElementById("siginInCreatePassword");
+    let Credentials_form = document.getElementById("credentials_form_sigin");
+    let Login_Context = document.getElementById("Signin_context");
+    let Signin_window_btn = document.getElementById("signin_btn");
+
+    Login_title.remove();
+    Login_Context.remove();
+    Signin_window_btn.remove();
+
+    let SignIn_Title = "<p id='login_form_title'>Sigin</p>";
+    let FullName = "<input type='text' class='signup' id='siginInName' value='Fullname' required autocomplete='name'>";
+    let Re_enterPassword = "<input type='text' class='signup' id='siginInReenterPassword' value='Password' required autocomplete='new-password'>"; 
+    let Signin_Context = "<p id='Login_context'>Already have an account?<span class='login_link link-primary' id='login_btn' onclick='login_function()'> Login</span></p>"
+
+    Email.insertAdjacentHTML("beforebegin", SignIn_Title);
+    Email.insertAdjacentHTML("beforebegin", FullName);
+    Password.insertAdjacentHTML("afterend", Re_enterPassword);
+    Credentials_form.insertAdjacentHTML("afterend",Signin_Context);
+
+};
