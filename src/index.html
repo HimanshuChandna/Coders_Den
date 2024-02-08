@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <script src="./main.js" defer type="module"></script>
     <script src="./auth_state.js"></script>
+    <script src="./index.js"></script>
     <title>Coder's Den</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span><img alt="profile_image" id="userProfilePicture"></span><!-- Button trigger modal -->
+                    <a class="nav-link" href="#"><span><img src="/media/user_logo.png" alt="profile_image" id="userProfilePicture"></span><!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Login In
                         </button>
@@ -54,7 +55,7 @@
                                       <input type="text" class="signup" id="siginInReenterPassword" value="Password" required autocomplete="new-password">
                                       <input type="submit" class="signup container" id="signup_btn" value="Sigin">
                                   </form>   
-                                  <p>Already have an account?<span class="login_link link-primary"> Login</span></p>
+                                  <p id="Login_context">Already have an account?<span class="login_link link-primary" id="login_btn" onclick="login_function()"> Login</span></p>
                                   <div class="line container"></div>
                                     <button class="signup_google" id="google_login_btn"><span><img src="/media/google_logo.png" class="google_logo"></span>Login with Google</button>
                               </div>
@@ -131,8 +132,8 @@
                 <textarea rows="5" cols="20" id="message" required></textarea>
                 <input type="submit" id="submit_btn">
             </form>
-            <p>coder.den.manage@gmail.com</p>
-            <p>&copy; $date BY Coder's Den</p>
+            <p id="footer_mail">coder.den.manage@gmail.com</p>
+            <p>&copy; <span id="date"></span> by Coder's Den</p>
         </div>
     </footer>
   
