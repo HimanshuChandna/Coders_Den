@@ -29,7 +29,7 @@ signInWindow = () => {
         password.setAttribute("type","text");
         let reveal_btn = document.getElementById("reveal_btn");
         reveal_btn.remove();
-        let reveal = "<input type='button' value='hide' id='hide_btn' onclick='reveal()''>";
+        let reveal = "<input type='button' value='hide' id='hide_btn' onclick='reveal()'>";
         password.insertAdjacentHTML("afterend",reveal);
         
     }
@@ -40,7 +40,7 @@ signInWindow = () => {
         password.setAttribute("type","password");
         let hide_btn = document.getElementById("hide_btn");
         hide_btn.remove();
-        let hide = "<input type='button' value='reveal' id='reveal_btn' onclick='hide()''>";
+        let hide = "<input type='button' value='reveal' id='reveal_btn' onclick='hide()'>";
         password.insertAdjacentHTML("afterend",hide);
 
     }
