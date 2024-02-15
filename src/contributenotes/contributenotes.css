@@ -1,4 +1,4 @@
-html {
+/* html {
     width: 100%;
     height: 100%;
     display: flex;
@@ -57,4 +57,120 @@ fieldset legend {
     display: flex;
     justify-content: center;
     align-content: center;
+} */
+
+.contributenotes{
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    
+
+    /* border:2px solid black; */
+
 }
+
+.griditem{
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap:1rem;
+    margin:1rem;
+
+}
+
+#contribute_notes_title{
+
+    font-size:2rem;
+    margin-top: 2rem;
+
+}
+
+#domain_select_title{
+
+    font-size:20px;
+
+}
+
+#domain_selection{
+
+    display:flex;
+    flex-direction:row;
+    align-items: baseline;
+    justify-content: center;
+    gap:1.5rem;
+
+}
+
+.domain_radio{
+
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin:1rem 0rem;
+    gap:2rem;
+    font-weight:600;
+    list-style-type: none;
+
+
+}
+
+#notes_upload_title{
+
+    font-size:1.2rem;
+
+}
+
+#notes_upload{
+
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+#notes_upload>li{
+
+    font-weight:600;
+
+}
+
+#upload_types{
+
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    font-size:1.1rem;
+    gap:2rem;
+
+}
+
+#notes_desc{
+
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    align-items:top;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+#notes_desc>li textarea{
+
+    text-align: center;
+
+}
+
+
+
+
+

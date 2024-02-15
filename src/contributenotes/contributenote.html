@@ -11,7 +11,7 @@
     <!-- <link href="./notes.css" rel="stylesheet"> -->
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <title>Coder's Den (Contribute Notes)</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(function () {
             $("#coursename").hide();
@@ -54,7 +54,7 @@
                 };
             });
         });
-    </script> -->
+    </script>
 </head>
 
 <body>
@@ -117,18 +117,16 @@
 
     <div class="submitnotes">
         <form action="" method="post" class="contributenotes">
-                <p id="contribute_notes_title">CONTRIBUTE NOTES</p>
-                <div class="notes_input">
-                    <section id="domain_selection">
-                        <p id="domain_select_title">Select your domain: </p>
-                            <ul class="domain_radio">
-                                <li><input type="radio" id="school" name="study" value="school" checked>
-                                    <label for="school">SCHOOL</label></li>
-                                <li><input type="radio" id="college" name="study" value="college">
-                                    <label for="college">COLLEGE</label></li>
-                            </ul>
+            <fieldset>
+                <legend>CONTRIBUTE NOTES</legend>
+                <div class="foralign">
+                    <section id="griditem">
+                        <input type="radio" name="study" value="school" checked>
+                        <label>SCHOOL</label>
+                        <input type="radio" name="study" value="college">
+                        <label>COLLEGE</label>
                     </section>
-                    <section class="griditem">
+                    <section id="griditem">
                         <div id="classno">
                             <select>
                                 <option value="5" hidden>CHOOSE CLASS</option>
@@ -141,7 +139,7 @@
                                 <option value="12">12</option>
                             </select>
                         </div>
-                        <div id="course_name">
+                        <div id="coursename">
                             <input list="course" placeholder="COURSE" autofocus>
                             <datalist id="course">
                                 <option value="BCA">
@@ -174,18 +172,18 @@
                             </select><br>
                         </div>
                     </section>
-
-                        <ul id="notes_upload">
-                            <p id="notes_upload_title">Drop your notes here:</p>
-                            <li><input type="radio" id="file" name="filechoose" value="UPLOAD" checked>
-                                <label>UPLOAD</label></li>
-                            <li><input type="radio" id="file" name="filechoose" value="CAMERA">
-                                <label>CAMERA</label></li>
-                        </ul>
-
-                        <!-- <section class="griditem">
+                    <section id="griditem">
+                        <label for="file">drop the notes here</label><br>
+                    </section>
+                    <section id="griditem">
+                        <input type="radio" name="filechoose" value="UPLOAD" checked>
+                        <label>UPLOAD</label>
+                        <input type="radio" name="filechoose" value="CAMERA">
+                        <label>CAMERA</label>
+                    </section>
+                    <section id="griditem">
                         <div class="upload">
-                            <section class="griditem">
+                            <section id="griditem">
                                 <input type="file" id="file" accept=".pdf,.doc,.jpg,.png,.docx"><br>
                             </section>
                         </div>
@@ -194,28 +192,16 @@
                                 <input type="file" accept="image/*" capture="enviornment"></input>
                             </section>
                         </div><br>
-                    </section> -->
-
-                    <ul id="upload_types">
-                        <li><input type="file" class="btn btn-outline-secondary" id="file" accept=".pdf,.doc,.jpg,.png,.docx"><br></li>
-                        <li><input type="file" class="btn btn-outline-secondary" accept="image/*" capture="enviornment"></input></li>
-                    </ul>
-
-                    <!-- <section class="griditem">
+                    </section>
+                    <section id="griditem">
                         <label>DESCRIPTION</label>
                         <input type="checkbox" id="checkboxfortextarea">
                     </section>
-                    <section class="griditem">
+                    <section id="griditem">
                         <div id="showed">
                             <textarea rows=5 coloums=20>Enter the discription here</textarea>
                         </div>
-                    </section> -->
-
-                    <ul id="notes_desc">
-                        <li><label>Description</label>
-                            <input type="checkbox" id="checkboxfortextarea"></li>
-                        <li><textarea rows=5 coloums=20 placeholder="Enter the discription here"></textarea></li>
-                    </ul>
+                    </section>
                 </div>
             </fieldset>
         </form>
