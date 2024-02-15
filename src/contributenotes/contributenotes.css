@@ -1,17 +1,16 @@
-html{
+html {
     width: 100%;
     height: 100%;
-    margin: 0%;
-    display: inline-grid;
-    margin-left: 38%;
-    margin-right: auto;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-body{
+
+body {
     padding: 2vh 2vh 2vh 2vh;
     margin: 0%;
-    padding:0%;
-    display: inline-flex;
+    padding: 0%;
+    display: i;
 }
 
 .submitnotes {
@@ -20,37 +19,41 @@ body{
     border-color: rgb(0, 0, 0);
     border-width: 1.7vh;
     border-style: double;
-    border-top-left-radius:5vh ;
+    border-top-left-radius: 5vh;
     border-top-right-radius: 5vh;
-    border-bottom-left-radius:5vh ;
-    border-bottom-right-radius:5vh ;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
     background-color: rgb(167, 201, 233);
     display: inline-flex;
-    
+
 }
 
 .contributenotes {
     padding: 2vh 2vh 2vh 2vh;
     align-items: center;
 }
-fieldset{
+
+fieldset {
     border-color: rgb(0, 0, 0);
     border-width: 1.5vh;
-    border-style:double;
-    border-top-left-radius:4vh ;
+    border-style: double;
+    border-top-left-radius: 4vh;
     border-top-right-radius: 4vh;
-    border-bottom-left-radius:4vh ;
-    border-bottom-right-radius:4vh ; 
+    border-bottom-left-radius: 4vh;
+    border-bottom-right-radius: 4vh;
 }
-fieldset legend{
+
+fieldset legend {
     text-align: justify;
     font-size: 3vh;
     font-family: 'Arial Narrow Bold';
 }
-.foralign{
-display: grid;
+
+.foralign {
+    display: grid;
 }
-#griditem{
+
+#griditem {
     display: flex;
     justify-content: center;
     align-content: center;

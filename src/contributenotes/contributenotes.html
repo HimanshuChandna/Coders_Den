@@ -26,7 +26,7 @@
             });
         });
         $(function () {
-            $(".camera").hide();
+            $(".camera").hide();    
             $(".upload").show();
             $(".contributenotes input").change(function () {
                 var val = $("input[name=filechoose]:checked", ".contributenotes").val();
@@ -133,9 +133,9 @@
                     </section>
                     <section id="griditem">
                         <label>DESCRIPTION</label>
+                        <input type="checkbox" id="checkboxfortextarea">
                     </section>
                     <section id="griditem">
-                        <input type="checkbox" id="checkboxfortextarea">
                         <div id="showed">
                             <textarea rows=5 coloums=20>Enter the discription here</textarea>
                         </div>
