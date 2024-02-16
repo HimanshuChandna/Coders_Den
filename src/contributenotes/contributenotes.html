@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>contribute notes</title> -->
+    <link rel="stylesheet" href="contributenotes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="/src/style.css" rel="stylesheet">
+    <!-- <link href="./notes.css" rel="stylesheet"> -->
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <title>Coder's Den (Contribute Notes)</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#coursename").hide();
+            $("#semester").hide();
+            $(".contributenotes input").change(function () {
+                var val = $("input[name=study]:checked", ".contributenotes").val();
+                if (val == "school") {
+                    $("#classno").show();
+                    $("#coursename").hide();
+                    $("#semester").hide();
+                }
+                else {
+                    $("#classno").hide();
+                    $("#coursename").show();
+                    $("#semester").show();
+                }
+            });
+        });
+        $(function () {
+            $(".camera").hide();    
+            $(".upload").show();
+            $(".contributenotes input").change(function () {
+                var val = $("input[name=filechoose]:checked", ".contributenotes").val();
+                if (val == "UPLOAD") {
+                    $(".upload").show();
+                    $(".camera").hide();
+                } else {
+                    $(".upload").hide();
+                    $(".camera").show();
+                }
+            });
+        });
+        $(function () {
+            $("#showed").hide();
+            $("#checkboxfortextarea").click(function () {
+                if ($("#checkboxfortextarea").is(":checked")) {
+                    $("#showed").show();
+                } else {
+                    $("#showed").hide();
+                };
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" id="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="/media/favicon.ico" alt="Coder's Den">
+            </a>
+            <div class="navbar" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/src/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/notes/notes.html">Notes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contribute Notes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span><img src="/media/user_logo.png" alt="profile_image" id="userProfilePicture"></span><!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Login In
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body" id="credentials_modal">
+                                <div class="signup-form-container">
+                                  <form id="credentials_form_sigin" method="post" action="./index.html">
+                                      <p id="signup_form_title">Signup</p>
+                                      <input type="text" class="signup" id="siginInName" value="Fullname" required autocomplete="name">
+                                      <input type="email" class="signup" id="siginInEmail" value="Email" required autocomplete="email">
+                                      <input type="text" class="signup" id="siginInCreatePassword" value="Password" required autocomplete="new-password">
+                                      <input type="text" class="signup" id="siginInReenterPassword" value="Password" required autocomplete="new-password">
+                                      <input type="submit" class="signup container" id="signup_btn" value="Sigin">
+                                  </form>   
+                                  <p id="Login_context">Already have an account?<span class="login_link link-primary" id="login_btn" onclick="login_function()"> Login</span></p>
+                                  <div class="line container"></div>
+                                    <button class="signup_google" id="google_login_btn"><span><img src="/media/google_logo.png" class="google_logo"></span>Login with Google</button>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <div class="submitnotes">
+        <form action="" method="post" class="contributenotes">
+                <p id="contribute_notes_title">CONTRIBUTE NOTES</p>
+                <div class="notes_input">
+                    <div id="domain_selection">
+                        <p id="domain_select_title">Select your domain: </p>
+                            <ul class="domain_radio">
+                                <li><input type="radio" id="school" name="study" value="school">
+                                    <label for="school">SCHOOL</label></li>
+                                <li><input type="radio" id="college" name="study" value="college">
+                                    <label for="college">COLLEGE</label></li>
+                            </ul>
+                    </div>
+                
+                        <div id="classno" class="hidden">
+                            <select>
+                                <option value="5" hidden>CHOOSE CLASS</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div id="course_name" class="hidden">
+                            <input list="course" placeholder="Course" autofocus>
+                            <datalist id="course">
+                                <option value="BCA">
+                                <option value="MCA">
+                                <option value="BTECH">
+                                <option value="MTECH">
+                                <option value="B.J.M.C">
+                                <option value="BCOM">
+                                <option value="BBA">
+                                <option value="BBA LL.B.">
+                                <option value="LL.M.">
+                                <option value="M.A.">
+                            </datalist>
+                        </div>
+                        <div id="semester" class="hidden">
+                            <select size="0">
+                                <option value="0" selected hidden>Choose Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2 </option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5">Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                                <option value="9">Semester 9</option>
+                                <option value="10">Semester 10</option>
+                                <option value="11">Semester 11</option>
+                                <option value="12">Semester 12</option>
+                            </select><br>
+                        </div>
+
+                        <ul id="notes_upload">
+                            <p id="notes_upload_title">Drop your notes here:</p>
+                            <li><input type="radio" id="upload_btn" name="filechoose" value="UPLOAD">
+                                <label for="upload_btn">UPLOAD</label></li>
+                            <li><input type="radio" id="camera_btn" name="filechoose" value="CAMERA">
+                                <label for="camera_btn">CAMERA</label></li>
+                        </ul>
+
+                        <!-- <section class="griditem">
+                        <div class="upload">
+                            <section class="griditem">
+                                <input type="file" id="file" accept=".pdf,.doc,.jpg,.png,.docx"><br>
+                            </section>
+                        </div>
+                        <div class="camera">
+                            <section id="griditem">
+                                <input type="file" accept="image/*" capture="enviornment"></input>
+                            </section>
+                        </div><br>
+                    </section> -->
+
+                    <ul id="upload_types">
+                        <li><input type="hidden" class="btn btn-outline-secondary" id="upload_link" accept=".pdf,.doc,.jpg,.png,.docx"><br></li>
+                        <li><input type="hidden" class="btn btn-outline-secondary" id="camera_link" accept="image/*" capture="enviornment"></input></li>
+                    </ul>
+
+                    <!-- <section class="griditem">
+                        <label>DESCRIPTION</label>
+                        <input type="checkbox" id="checkboxfortextarea">
+                    </section>
+                    <section class="griditem">
+                        <div id="showed">
+                            <textarea rows=5 coloums=20>Enter the discription here</textarea>
+                        </div>
+                    </section> -->
+
+                    <ul id="notes_desc">
+                        <li><label for="checkboxfortextarea">Description</label>
+                            <input type="checkbox" id="checkboxfortextarea"></li>
+                        <li><div id="textareacontainer" class="hidden">
+                                <textarea rows=5 coloums=20 placeholder="Enter the discription here"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="form-controls">
+                        <input type="reset" class="btn btn-danger">
+                        <input type="submit" class="btn btn-success">
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./contributenotes.js"></script>
+</body>
+
+</html>
