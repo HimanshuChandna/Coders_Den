@@ -119,17 +119,17 @@
         <form action="" method="post" class="contributenotes">
                 <p id="contribute_notes_title">CONTRIBUTE NOTES</p>
                 <div class="notes_input">
-                    <section id="domain_selection">
+                    <div id="domain_selection">
                         <p id="domain_select_title">Select your domain: </p>
                             <ul class="domain_radio">
-                                <li><input type="radio" id="school" name="study" value="school" checked>
+                                <li><input type="radio" id="school" name="study" value="school">
                                     <label for="school">SCHOOL</label></li>
                                 <li><input type="radio" id="college" name="study" value="college">
                                     <label for="college">COLLEGE</label></li>
                             </ul>
-                    </section>
-                    <section class="griditem">
-                        <div id="classno">
+                    </div>
+                
+                        <div id="classno" class="hidden">
                             <select>
                                 <option value="5" hidden>CHOOSE CLASS</option>
                                 <option value="6">6</option>
@@ -141,8 +141,8 @@
                                 <option value="12">12</option>
                             </select>
                         </div>
-                        <div id="course_name">
-                            <input list="course" placeholder="COURSE" autofocus>
+                        <div id="course_name" class="hidden">
+                            <input list="course" placeholder="Course" autofocus>
                             <datalist id="course">
                                 <option value="BCA">
                                 <option value="MCA">
@@ -156,31 +156,30 @@
                                 <option value="M.A.">
                             </datalist>
                         </div>
-                        <div id="semester">
+                        <div id="semester" class="hidden">
                             <select size="0">
-                                <option value="0" selected hidden>CHOOSE SEMESTER</option>
-                                <option value="1">semester 1</option>
-                                <option value="2">semester 2 </option>
-                                <option value="3">semester 3</option>
-                                <option value="4">semester 4</option>
-                                <option value="5">semester 5</option>
-                                <option value="6">semester 6</option>
-                                <option value="7">semester 7</option>
-                                <option value="8">semester 8</option>
-                                <option value="9">semester 9</option>
-                                <option value="10">semester 10</option>
-                                <option value="11">semester 11</option>
-                                <option value="12">semester 12</option>
+                                <option value="0" selected hidden>Choose Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2 </option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5">Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                                <option value="9">Semester 9</option>
+                                <option value="10">Semester 10</option>
+                                <option value="11">Semester 11</option>
+                                <option value="12">Semester 12</option>
                             </select><br>
                         </div>
-                    </section>
 
                         <ul id="notes_upload">
                             <p id="notes_upload_title">Drop your notes here:</p>
-                            <li><input type="radio" id="file" name="filechoose" value="UPLOAD" checked>
-                                <label>UPLOAD</label></li>
-                            <li><input type="radio" id="file" name="filechoose" value="CAMERA">
-                                <label>CAMERA</label></li>
+                            <li><input type="radio" id="upload_btn" name="filechoose" value="UPLOAD">
+                                <label for="upload_btn">UPLOAD</label></li>
+                            <li><input type="radio" id="camera_btn" name="filechoose" value="CAMERA">
+                                <label for="camera_btn">CAMERA</label></li>
                         </ul>
 
                         <!-- <section class="griditem">
@@ -197,8 +196,8 @@
                     </section> -->
 
                     <ul id="upload_types">
-                        <li><input type="file" class="btn btn-outline-secondary" id="file" accept=".pdf,.doc,.jpg,.png,.docx"><br></li>
-                        <li><input type="file" class="btn btn-outline-secondary" accept="image/*" capture="enviornment"></input></li>
+                        <li><input type="hidden" class="btn btn-outline-secondary" id="upload_link" accept=".pdf,.doc,.jpg,.png,.docx"><br></li>
+                        <li><input type="hidden" class="btn btn-outline-secondary" id="camera_link" accept="image/*" capture="enviornment"></input></li>
                     </ul>
 
                     <!-- <section class="griditem">
@@ -212,15 +211,23 @@
                     </section> -->
 
                     <ul id="notes_desc">
-                        <li><label>Description</label>
+                        <li><label for="checkboxfortextarea">Description</label>
                             <input type="checkbox" id="checkboxfortextarea"></li>
-                        <li><textarea rows=5 coloums=20 placeholder="Enter the discription here"></textarea></li>
+                        <li><div id="textareacontainer" class="hidden">
+                                <textarea rows=5 coloums=20 placeholder="Enter the discription here"></textarea>
+                            </div>
+                        </li>
                     </ul>
+
+                    <div class="form-controls">
+                        <input type="reset" class="btn btn-danger">
+                        <input type="submit" class="btn btn-success">
+                    </div>
                 </div>
-            </fieldset>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./contributenotes.js"></script>
 </body>
 
 </html>
