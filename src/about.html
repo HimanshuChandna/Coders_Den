@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        padding: 0px 50px;
+      }
+      .hero {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 50px;
+      }
+      .hero img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .about {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid black;
+        padding: 50px 0px;
+      }
+      .box1 {
+        width: 35%;
+        height: 100%;
+        border-right: 2px solid black;
+        padding: 20px;
+        font-size: 24px;
+      }
+      .box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 65%;
+        height: 100%;
+        padding: 0px 30px;
+      }
+      .info1,
+      .info2 {
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+      }
+      .info1 {
+        border: none;
+      }
+      .data {
+        border-left: 2px solid black;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 20px;
+      }
+      .info1 :nth-child(1) {
+        border: none;
+      }
+      .info2 :nth-child(1) {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="about">
+        <div class="box1"><h3>Who are we ?</h3></div>
+        <div class="box2">
+          <div class="info1">
+            <div class="data"><h3>content</h3></div>
+            <div class="data"><h3>content</h3></div>
+          </div>
+          <div class="info2">
+            <div class="data"><h3>content</h3></div>
+            <div class="data"><h3>content</h3></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
