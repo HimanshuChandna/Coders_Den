@@ -1,0 +1,62 @@
+*{
+
+    --secondary-green:#4ac8ae;
+    --primary-green:#f2fffb;
+    --light-green:#d8fff3;
+    padding:0rem;
+    margin:0rem;
+
+}
+
+body{
+
+    background-image: url('/src/media/CodersDenBackgroundImage.svg');
+    background-color: var(--primary-green);
+    
+}
+
+.hero_btns{
+
+    display:flex;
+    flex-direction:row;
+    gap:1.5rem;
+
+}
+
+#contributeNotesBtn{
+
+    color:whitesmoke;
+    background-color: var(--secondary-green);
+
+}
+
+#notesBtn{
+
+    color:var(--secondary-green);
+    background-color: var(--light-green);
+
+}
+
+#highlight_heading{
+
+    color:var(--secondary-green);
+    font-size:3rem;
+    font-weight:600;
+
+}
+
+.heading{
+
+    font-size:3rem;
+    font-weight: 600;
+
+}
+
+.hero_stickers{
+
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+    margin-top:2rem;
+
+}

@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#F2FFFB"/>
+<circle cx="1344" cy="472" r="224" fill="#F2FFFB" stroke="#4AC8AE" stroke-width="2"/>
+<circle cx="1362" cy="495" r="225" fill="#4AC8AE"/>
+<circle cx="1162" cy="668" r="25" fill="#4AC8AE"/>
+<circle cx="423" cy="821" r="25" fill="#4AC8AE"/>
+<g clip-path="url(#clip0_76_30)">
+<circle cx="260" cy="260" r="259.5" transform="matrix(-1 0 0 1 480 243)" stroke="#4AC8AE"/>
+<circle cx="90" cy="90" r="89.5" transform="matrix(-1 0 0 1 310 413)" stroke="#4AC8AE"/>
+<circle cx="147" cy="147" r="146.5" transform="matrix(-1 0 0 1 367 356)" stroke="#4AC8AE"/>
+<circle cx="204.5" cy="204.5" r="204" transform="matrix(-1 0 0 1 424 298)" stroke="#4AC8AE"/>
+<circle cx="15" cy="15" r="15" transform="matrix(-1 0 0 1 409 297)" fill="#4AC8AE"/>
+</g>
+<circle cx="1626" cy="689" r="76" transform="rotate(-90 1626 689)" stroke="#4AC8AE"/>
+<circle cx="1626" cy="689" r="124.45" transform="rotate(-90 1626 689)" stroke="#4AC8AE"/>
+<circle cx="1625.57" cy="688.574" r="173.325" transform="rotate(-90 1625.57 688.574)" stroke="#4AC8AE"/>
+<circle cx="1626" cy="689" r="220.5" transform="rotate(-90 1626 689)" stroke="#4AC8AE"/>
+<circle cx="1463.65" cy="836.899" r="12.75" transform="rotate(-90 1463.65 836.899)" fill="#4AC8AE"/>
+<defs>
+<clipPath id="clip0_76_30">
+<rect width="480" height="520" fill="white" transform="matrix(-1 0 0 1 480 243)"/>
+</clipPath>
+</defs>
+</svg>
