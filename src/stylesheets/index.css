@@ -10,9 +10,17 @@
 
 body{
 
-    background-image: url('/src/media/CodersDenBackgroundImage.svg');
+    /* background-image: url('/src/media/CodersDenBackgroundImage.svg'); */
     background-color: var(--primary-green);
     
+}
+
+.hero-section{
+
+    height:100vh - 100px;
+    padding:8rem 5rem;
+    /* width:100vw; */
+
 }
 
 .hero_btns{
@@ -27,6 +35,7 @@ body{
 
     color:whitesmoke;
     background-color: var(--secondary-green);
+    font-weight:600;
 
 }
 
@@ -34,6 +43,7 @@ body{
 
     color:var(--secondary-green);
     background-color: var(--light-green);
+    font-weight:600;
 
 }
 
@@ -49,6 +59,8 @@ body{
 
     font-size:3rem;
     font-weight: 600;
+    /* margin-left:5rem; */
+    /* margin-top:9rem; */
 
 }
 
@@ -58,5 +70,16 @@ body{
     flex-direction:row;
     gap:1rem;
     margin-top:2rem;
+
+}
+
+.sticker > p{
+
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    gap:.5rem;
+    padding:0px;
+    margin:0px;
 
 }

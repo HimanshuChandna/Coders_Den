@@ -1,0 +1,101 @@
+*{
+
+    padding:0px;
+    margin:0px;
+    --secondary-green:#4ac8ae;
+    --primary-green:#f2fffb;
+    --light-green:#d8fff3;
+
+}
+
+nav{
+
+    background-color: var(--primary-green);
+
+}
+
+#searchbarControl{
+
+    display:flex;
+    flex-direction:row;
+    margin:0px;
+
+}
+
+#signup_title, #login_title{
+
+    font-size:2rem;
+    font-weight:600;
+    text-align: center;
+
+}
+
+.searchbar{
+
+    margin-left:2rem;
+    padding:0px;
+    display:flex;
+    flex-direction:row;
+    border:1px solid lightgrey;
+    border-radius:10px;
+    padding:0px;
+
+}
+
+.searchbar>input{
+
+    border:none;
+    border-radius:10px 0px 0px 10px;
+
+}
+
+#searchbtn{
+
+    background-color: var(--light-green);
+    color:var(--secondary-green);
+    font-weight: 600;
+    border-color:var(--light-green);
+    border-radius:0px 10px 10px 0px;
+
+}
+
+#menu_bar{
+
+    display:flex;
+    flex-direction: row;
+    margin-left:2rem;
+    font-weight:600;
+
+}
+
+#menu_bar>li>a:focus{
+
+    color:var(--secondary-green);
+
+}
+
+#signup_btn{
+
+    font-weight:600;
+
+}
+
+#login_btn{
+
+    background-color:var(--secondary-green);
+    border-color: var(--secondary-green);
+    font-weight:600;
+
+}
+
+#signup_form, #login_form{
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:1rem;
+
+}
+
+

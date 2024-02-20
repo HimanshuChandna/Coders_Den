@@ -26,35 +26,27 @@
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
     <script src="./js/validation.js" defer></script>
     <script src="./firebase/authentication/auth.js" defer type="module"></script>
-    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="./stylesheets/navbar.css">
     <title>Coder's Den</title>
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Coder's Den</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" id="searchbar" name="searchbar" placeholder="Search" aria-label="Search">
-        <div class="dropdown">
-        <button class="form-control btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Courses
-        </button>
-        <ul class="dropdown-menu">
-          <li><button value="BCA">BCA</button></li>
-          <li>BBA</li>
-          <li>BJAMC</li>
-        </ul>
-        </div>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+    <form class="d-flex" role="search" id="searchbarControl">
+    <div class="searchbar">    
+      <input class="form-control" type="search" id="searchbar" name="searchbar" placeholder="Want to learn?" aria-label="Search">
+      <button class="btn btn-outline-success" id="searchbtn" type="submit">Search</button>
+    </div>
     </form>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu_bar">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Notes</a>
@@ -69,7 +61,7 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <ul class="navbar-nav me-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav me-5" id="navbarSupportedContent">
         <li class="nav-item">
          <?php if( isset($user) ): ?>
             <!-- <button>User Profile</button> -->
@@ -115,7 +107,7 @@
 
           <?php else: ?>
             <!-- Sign-in Modal -->
-            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#signupModal">
+            <button type="button" id="signup_btn" class="btn" data-bs-toggle="modal" data-bs-target="#signupModal">
             Sign up
             </button>
 
@@ -156,7 +148,7 @@
         </li>
 
           <li class="nav-item">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" id="login_btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Login
 </button>
 

@@ -25,34 +25,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./stylesheets/navbar.css">
     <link rel="stylesheet" href="./stylesheets/index.css">
     <title>Coders Den Index</title>
 </head>
 <body>
-    <h1>home</h1>
-    <?php if( isset($user) ): ?>
-        <p>You are logged in. Hello <?= htmlspecialchars($user["user_name"]) ?></p>
-        <p><a href="logout.php">Logout</a></p>
-
-    <?php else: ?>
-        <p><a href="login.php">Login</a> or <a href="signup.php">Signup</a></p>
-        
-    <?php endif;?>
-
-    <p class="heading">Your One-Stop</p>
-    <p class="heading"><span id="highlight_heading">Notes</span> Destination</p>
+    <div class="hero-section">
+    <div class="heading">
+        <p>Your One-Stop</p>
+        <p><span id="highlight_heading">Notes</span> Destination</p>
+    </div>
     <p class="sub-heading">Community Driven Notes Aggregation Platform!</p>
     <div class="hero_btns">
         <button class="btn" id="contributeNotesBtn"><a>Contribute Notes</a></button>
         <button class="btn" id="notesBtn"><a>Notes</a></button>
     </div>
     <div class="hero_stickers">
-        <p><span><img src="./media/google_logo.png" width="20px" height="20px"></span>Complete Notes</p>
-        <p><span><img src="./media/google_logo.png" width="20px" height="20px"></span>Carrer-Oriented</p>
-        <p><span><img src="./media/google_logo.png" width="20px" height="20px"></span>Creative Thinking</p>
+        <div class="sticker">
+            <p><span><img src="./media/checklist.png" width="20px" height="20px"></span>Complete Notes</p>
+        </div>
+        <div class="sticker">
+            <p><span><img src="./media/targeted.png" width="20px" height="20px"></span>Carrer-Oriented</p>
+        </div>
+        <div class="sticker">
+            <p><span><img src="./media/creativity.png" width="20px" height="20px"></span>Creative Thinking</p>
+        </div>
+    </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
