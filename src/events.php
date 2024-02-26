@@ -18,15 +18,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Protest+Revolution&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <style>
-    html,
-    body {
+    *{
+
+      padding:0px;
+      margin:0px;
+
+    }
+    /* body {
       width: 100%;
       height: 100%;
       display: grid;
       padding: 1.1vh;
       grid-auto-rows: min-content;
       row-gap: 28px;
-    }
+    } */
 
     .carousel-dark .carousel-indicators [data-bs-target] {
       background-color: #c8c8c8d3;

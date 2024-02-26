@@ -95,6 +95,30 @@ nav{
     align-items:center;
     justify-content: center;
     gap:1rem;
+    padding:1rem;
+
+}
+
+#signupName,#signupEmail,#signupPassword, #signupRePassword,#loginEmail,#loginPassword{
+
+    padding:.3rem;
+    border-radius:5px;
+    border-color:var(--secondary-green);
+
+}
+
+#signupSubmitBtn, #signupResetBtn,#loginSubmitBtn, #loginResetBtn{
+
+    border-color:var(--secondary-green);
+    background-color:var(--secondary-green);
+    color:white;
+    font-weight:600;
+
+}
+
+#signup_title ,#login_title{
+
+    color:var(--secondary-green);
 
 }
 
