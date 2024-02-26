@@ -129,10 +129,7 @@
     }
 
     .description {
-      overflow: scroll;
-      height: 10vh;
-      width: 40vh;
-      transition: 1s;
+      overflow: hidden;
     }
     .photobackground{
       background-color: rgba(171, 200, 252, 0.792);
@@ -368,7 +365,6 @@
     </div>
   </div>
   </span>
-  <!-- End Example Code -->
 </body>
 
 </html>
