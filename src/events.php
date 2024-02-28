@@ -17,205 +17,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Protest+Revolution&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <style>
-    *{
-
-      padding:0px;
-      margin:0px;
-
-    }
-    /* body {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      padding: 1.1vh;
-      grid-auto-rows: min-content;
-      row-gap: 28px;
-    } */
-
-    .carousel-dark .carousel-indicators [data-bs-target] {
-      background-color: #c8c8c8d3;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      border: 0px solid;
-      position: relative;
-      bottom: -10px;
-    }
-
-    .carousel-dark .carousel-indicators .active {
-      background-color: #4AC8AE;
-      width: 40px;
-      border-radius: 20px;
-
-    }
-
-    .courses {
-      display: grid;
-      grid-auto-flow: column;
-      list-style: none;
-      justify-items: center;
-      padding: 3%;
-
-    }
-
-
-    .items {
-      width: 47vh;
-      height: 62vh;
-      background: rgb(255, 255, 255);
-      box-sizing: border-box;
-      box-shadow: #4AC8AE -1px 6px 14px -7px;
-      border-radius: 0.3rem;
-      transition: 1s;
-      display: flex;
-    }
-
-    .items:hover {
-      background-color: #4AC8AE;
-      box-shadow: -1px 6px 14px -7px;
-
-      .photobackground {
-        background-color: white;
-      }
-
-      ;
-
-      .coursename {
-        -webkit-text-fill-color: peachpuff;
-      }
-
-      ;
-
-      .description {
-        -webkit-text-fill-color: white;
-      }
-
-
-
-      .notespage {
-        -webkit-text-fill-color: white;
-        -webkit-text-stroke: blue;
-        -webkit-text-stroke-width: 0.2px;
-      }
-    }
-
-    .mainheading {
-      font-family: "Protest Revolution", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 6vh;
-    }
-
-    .smallheading {
-      font-family: "Protest Revolution", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 2.5vh;
-      color: #4AC8AE;
-    }
-
-    .smalldescripton {
-      font-family: "Protest Revolution", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-      font-size: 2.85vh;
-      color: #858383af;
-    }
-
-    .inneritems {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2.2vh;
-    }
-
-    .notespage {
-      margin-top: 1vh;
-      transition: 1s;
-      text-decoration: none;
-      font-family: "Anton", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      -webkit-text-fill-color: #787878;
-    }
-
-
-    .photo {
-      width: 100%;
-      height: 100%;
-    }
-
-    .description {
-      height: 6vh;
-      width: 40vh;
-      transition: 1s;
-    }
-
-    .description h1 {
-      font-size: 30px;
-      font-weight: 700;
-    }
-
-    .photobackground {
-      background-color: #4AC8AE;
-      border-radius: 4px;
-      width: 42vh;
-      height: 39vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 1vh;
-      padding-bottom: 3vh;
-      transition: 1s;
-    }
-
-    .coursename {
-      font-family: "ubuntu";
-      margin-top: 8px;
-      margin-left: 0px;
-      font-size: 18px;
-      transition: 1s;
-      color: #4AC8AE;
-    }
-
-    .more {
-      width: 14vh;
-      height: 4vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3vh;
-      box-sizing: border-box;
-      border: 3px double #4AC8AE;
-      border-radius: 6.5px;
-      font-weight: 800;
-      box-shadow: #4AC8AE 1px 0px 13px 0px;
-      transition: 1s;
-      align-self: center;
-      justify-self: center;
-    }
-
-    .more:hover {
-      box-shadow: 1px 0px 13px 0px;
-      -webkit-text-fill-color: white;
-      background-color: #4AC8AE;
-      border: 3px double white;
-    }
-
-    .maintext {
-      height: 81px;
-      padding-left: 83px;
-
-    }
-
-    .carousel-dark {
-      align-self: center;
-    }
-  </style>
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div class="allcontent">
   <div class="maintext">
     <h6 class="smallheading">
       Explore upcoming event
@@ -397,8 +203,9 @@
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
     </div>
   </div>
-  <button type="button" class="more" onclick="window.location.href='#'"> Explore All Events</button>
-  </span>
+</span>
+<button type="button" class="more" onclick="window.location.href='#'"> Explore All Events</button>
+</div>
 </body>
 
 </html>

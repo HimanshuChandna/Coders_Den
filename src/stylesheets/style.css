@@ -1,0 +1,210 @@
+*{
+    --events-width:100%;
+    --events-hieght:100%;
+    --carousel-notactive-indicator-color:#c8c8c8d3;
+    --carousel-active-indicator-color:#4AC8AE;
+    --primary-color:white;
+    --primary-color-onhover:#4AC8AE;
+    --eventname: #4AC8AE;
+    --eventnameonhover: peachpuff;
+    --collegename:black;
+    --collegenameonhover: white;
+    --exploreheading-colour:#4ac8ae;
+    --upcomingheading-color:black;
+    --enjoyheading-color: #858383af;
+    --shadow-color:#4AC8AE ;
+    --shadow-coloronhover:black ;
+    --photobackgroundcolor:#4AC8AE;
+    --photobackgroundcoloronhover:white;
+}
+
+.allcontent {
+  width: var(--events-width);
+  height: var(--events-hieght);
+  display: grid;
+  padding: 1.1vh;
+  grid-auto-rows: min-content;
+  row-gap: 28px;
+} 
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: var(--carousel-notactive-indicator-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0px solid;
+  position: relative;
+  bottom: -10px;
+}
+
+.carousel-dark .carousel-indicators .active {
+  background-color: var(--carousel-active-indicator-color);
+  width: 40px;
+  border-radius: 20px;
+
+}
+
+.courses {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  justify-items: center;
+  padding: 3%;
+
+}
+
+
+.items {
+  width: 47vh;
+  height: 62vh;
+  background:var(--primary-color);
+  box-sizing: border-box;
+  box-shadow:  var(--shadow-color) 0px 6px 14px -7px;
+  border-radius: 0.3rem;
+  transition: 1s;
+  display: flex;
+}
+
+.items:hover {
+  background-color: #4AC8AE;
+  box-shadow: var(--shadow-coloronhover) 0px 6px 14px -7px;
+
+  .photobackground {
+    background-color: var(--photobackgroundcoloronhover);
+  }
+
+  ;
+
+  .coursename {
+    -webkit-text-fill-color:var(--eventnameonhover);
+  }
+
+  ;
+
+  .description {
+    -webkit-text-fill-color:var(--collegenameonhover);
+  }
+
+
+
+  .notespage {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: blue;
+    -webkit-text-stroke-width: 0.2px;
+  }
+}
+
+.mainheading {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vh;
+  color: var(--upcomingheading-color);
+}
+
+.smallheading {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5vh;
+  color: var(--exploreheading-colour);
+}
+
+.smalldescripton {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.85vh;
+  color:var(--enjoyheading-color);
+}
+
+.inneritems {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.2vh;
+}
+
+.notespage {
+  margin-top: 1vh;
+  transition: 1s;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-text-fill-color: #787878;
+}
+
+
+.photo {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  height: 6vh;
+  width: 40vh;
+  transition: 1s;
+}
+
+.description h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--collegename);
+}
+
+.photobackground {
+  background-color: var(--photobackgroundcolor);
+  border-radius: 4px;
+  width: 42vh;
+  height: 39vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  padding-bottom: 3vh;
+  transition: 1s;
+}
+
+.coursename {
+  font-family: "ubuntu";
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 18px;
+  transition: 1s;
+  color: var(--eventname);
+}
+
+.more {
+  width: 14vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1.3vh;
+  box-sizing: border-box;
+  border: 3px double #4AC8AE;
+  border-radius: 6.5px;
+  font-weight: 800;
+  box-shadow: #4AC8AE 1px 0px 13px 0px;
+  transition: 1s;
+  align-self: center;
+  justify-self: center;
+}
+
+.more:hover {
+  box-shadow: 1px 0px 13px 0px;
+  -webkit-text-fill-color: white;
+  background-color: #4AC8AE;
+  border: 3px double white;
+}
+
+.maintext {
+  height: 81px;
+  padding-left: 83px;
+
+}
+
+.carousel-dark {
+  align-self: center;
+}
