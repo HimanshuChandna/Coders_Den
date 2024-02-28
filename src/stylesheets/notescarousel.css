@@ -1,0 +1,162 @@
+*{
+    --notes-carousel-width:100%;
+    --notes-carousel-hieght:100%;
+    --carousel-notactive-indicator-color:#c8c8c8d3;
+    --primary-color:white;
+    --primary-color-onhover:#4AC8AE;
+    --popular-courses-heading: #4AC8AE;
+    --ournotes-courses-heading: black;
+    --readmore-colour:#4ac8ae;
+    --icon-backgroundcolor: rgba(171, 200, 252, 0.792);
+}
+.allcontent{
+    width: var(--notes-carousel-width);
+    height: var(--notes-carousel-hieght);
+    display: flex;
+    padding: 2vh;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--carousel-notactive-indicator-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0px solid;
+    position: relative;
+    bottom: -10px;
+}
+
+.carousel-dark .carousel-indicators .active {
+    background-color: var(--primary-color-onhover);
+    width: 40px;
+    border-radius: 20px;
+
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 3%;
+
+}
+
+.smallheading {
+    text-align: center;
+    color:var(--popular-courses-heading);
+    font-weight: bold;
+}
+
+.mainheading {
+    text-align: center;
+    font-weight: 580;
+    color: var(--ournotes-courses-heading);
+}
+
+.items {
+    width: 43vh;
+    height: 24vh;
+    background:var(--primary-color);
+    box-sizing: border-box;
+    box-shadow: 1px 0px 4px 0px;
+    border-radius: 0.5rem;
+    transition: 1s;
+    display: flex;
+}
+
+.items:hover {
+    background-color: var(--primary-color-onhover);
+
+    .photobackground {
+        background-color: var(--primary-color);
+    }
+
+    ;
+
+    .coursename {
+        -webkit-text-fill-color:var(--primary-color);
+    }
+
+    ;
+
+    .description {
+        -webkit-text-fill-color:var(--primary-color);
+    }
+
+    ;
+
+    .notespage {
+        -webkit-text-fill-color:var(--primary-color);
+    }
+}
+
+
+
+
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8vh;
+}
+
+.protest-revolution-regular1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+}
+
+.inneritems {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.2vh;
+}
+
+.notespage {
+    margin-top: 1vh;
+    transition: 1s;
+    text-decoration: none;
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    -webkit-text-fill-color: var(--readmore-colour);
+}
+
+
+.photo {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 8px;
+}
+
+.description  {
+    height: 6vh;
+    width:39vh;
+    overflow: hidden;
+}
+.photobackground {
+    background-color: var(--icon-backgroundcolor);
+    border-radius: 15px;
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0.8vh;
+    transition: 1s;
+}
+
+.coursename {
+    font-family: "ubuntu";
+    margin-top: 6.4px;
+    margin-left: 15px;
+    font-size: 30px;
+    transition: 1s;
+}

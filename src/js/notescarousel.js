@@ -1,0 +1,39 @@
+/* image for 1st list and 1st item*/var url11 = "media/mobile.png";
+document.getElementById("logo-1-1").src = url11;
+/* image for 1st list and 2nd item*/var url12 = "media/mobile.png";
+document.getElementById("logo-1-2").src = url12;
+/* image for 1st list and 3rd item*/var url13 = "media/mobile.png";
+document.getElementById("logo-1-3").src = url13;
+/* image for 2nd list and 1st item*/var url21 = "media/mobile.png";
+document.getElementById("logo-2-1").src = url21;
+/* image for 2nd list and  2nd item*/var url22 = "media/mobile.png";
+document.getElementById("logo-2-2").src = url22;
+/* image for 2nd list and 3rd item*/var url23 = "media/mobile.png";
+document.getElementById("logo-2-3").src = url23;
+/* image for 3rd list and 1st item*/var url31 = "media/mobile.png";
+document.getElementById("logo-3-1").src = url31;
+/* image for 3rd list and 2nd item*/var url32 = "media/mobile.png";
+document.getElementById("logo-3-2").src = url32;
+/* image for 3rd list and 3rd item*/var url33 = "media/mobile.png";
+document.getElementById("logo-3-3").src = url33;
+
+// now for read more courses
+/* link for 1st list and 1st item*/var link11 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-1-1").href = link11;
+/* link for 1st list and 2nd item*/var link12 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-1-2").href = link12;
+/* link for 1st list and 3rd item*/var link13 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-1-3").href = link13;
+/* link for 2nd list and 1st item*/var link21 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-2-1").href = link21;
+/* link for 2nd list and  2nd item*/var link22 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-2-2").href = link22;
+/* link for 2nd list and 3rd item*/var link23 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-2-3").href = link23;
+/* link for 3rd list and 1st item*/var link31 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-3-1").href = link31;
+/* link for 3rd list and 2nd item*/var link32 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-3-2").href = link32;
+/* link for 3rd list and 3rd item*/var link33 = "https://youtu.be/xvFZjo5PgG0";
+document.getElementById("readmore-3-3").href = link33;
+
